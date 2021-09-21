@@ -1,11 +1,13 @@
 var berkley = berkley || {};
     berkley.components = berkley.components || {}; 
 
-berkley.components.NavigationFooter = (() => {
+berkley.components.NavigationFooter = ((module) => {
 
-    init  = () => {
-        console.log('NavigationFooter - loaded');
+    let init  = () => {
+        console.log('NavigationFooter - loaded', module);
     }
+
+    init();
 
 });
 

@@ -1,2 +1,1 @@
-import './utils/index';
-import './components/index';
+import './global/index';

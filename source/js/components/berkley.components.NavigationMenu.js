@@ -1,12 +1,13 @@
 var berkley = berkley || {};
     berkley.components = berkley.components || {}; 
 
-berkley.components.NavigationMenu = (() => {
+berkley.components.NavigationMenu = ((module) => {
 
-    init  = () => {
-        console.log('NavigationMenu loaded');
+    let init  = () => {
+        console.log('NavigationMenu - loaded:', module);
     }
 
+    init();
 });
 
 export default berkley.components.NavigationMenu;

@@ -105,3 +105,6 @@ dist
 
 # Patternlab
 public/
+
+#dependency
+dependencyGraph.json
