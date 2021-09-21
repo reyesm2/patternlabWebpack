@@ -1,43 +1,44 @@
-/*------------------------------------*\
+/* ------------------------------------ *\
     #LOGO
-\*------------------------------------*/
+\* ------------------------------------ */
 
 /**
  * Branding image or text of the site
  */
 .c-logo {
-	font-size: $font-size-large;
+    font-size: $font-size-large;
 
-	.c-footer & {
-		margin-bottom: 2rem;
+    .c-footer & {
+        margin-bottom: 2rem;
 
-		@media all and (min-width: $bp-med) {
-			margin-bottom: 0;
-		}
-	}
+        @media all and (min-width: $bp-med) {
+            margin-bottom: 0;
+        }
+    }
 }
 
 /**
  * Logo link
  */
 .c-logo__link {
-	display: block;
+    display: block;
 }
 
 /**
  * Logo image
  */
 .c-logo__img {
-	display: block;
+    display: block;
 }
 
 .c-logo__left {
-	color: $color-brand-blue;
+    color: $color-brand-blue;
 
-	.c-logo--light & {
-		color: $color-neutral-white;
-	}
+    .c-logo--light & {
+        color: $color-neutral-white;
+    }
 }
+
 .c-logo__right {
-	color: $color-brand-orange;
+    color: $color-brand-orange;
 }

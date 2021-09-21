@@ -1,7 +1,7 @@
 
-/*------------------------------------*\
-	#TOTAL CONTAINER
-\*------------------------------------*/
+/* ------------------------------------ *\
+    #TOTAL CONTAINER
+\* ------------------------------------ */
 
 /**
  * 1)
@@ -16,8 +16,8 @@
 }
 
 .c-total {
-    display: flex;
     align-items: center;
+    display: flex;
 
     @media all and (min-width: $bp-small-2) {
         justify-content: flex-end;
@@ -47,9 +47,9 @@
 }
 
 .c-total__span {
+    color: $color-brand-blue;
     font-family: $font-family-secondary;
     font-size: $font-size-med-2;
-    color: $color-brand-blue;
 
     .c-total--no-break & {
         margin-left: 2rem;

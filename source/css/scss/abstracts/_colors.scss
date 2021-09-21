@@ -1,6 +1,6 @@
-/*------------------------------------*\
+/* ------------------------------------ *\
     #COLORS
-\*------------------------------------*/
+\* ------------------------------------ */
 
 /**
  * In this file, we take the literal colors from our palette (defined in variables.scss)
@@ -11,9 +11,9 @@
 
 
 
-/*------------------------------------*\
+/* ------------------------------------ *\
     #GLOBAL TEXT COLOR
-\*------------------------------------*/
+\* ------------------------------------ */
 
 /**
  * Body text and background colors
@@ -31,9 +31,9 @@ $color-text-highlight-bg: $color-neutral-gray-13;
 
 
 
-/*------------------------------------*\
+/* ------------------------------------ *\
     #LINKS
-\*------------------------------------*/
+\* ------------------------------------ */
 
 $color-links: $color-neutral-gray-73 !default;
 $color-links-hover: $color-brand-orange !default;
@@ -44,9 +44,9 @@ $color-links-visited: $color-neutral-gray-93 !default;
 
 
 
-/*------------------------------------*\
+/* ------------------------------------ *\
     #BUTTONS
-\*------------------------------------*/
+\* ------------------------------------ */
 
 $color-btn-primary: $color-neutral-white !default;
 $color-btn-primary-bg: $color-neutral-gray-93 !default;
@@ -65,9 +65,9 @@ $color-btn-disabled-bg: $color-neutral-gray-07 !default;
 
 
 
-/*------------------------------------*\
+/* ------------------------------------ *\
     #FORMS
-\*------------------------------------*/
+\* ------------------------------------ */
 
 $color-form: $color-neutral-gray-93 !default;
 $color-form-bg: $color-neutral-white !default;

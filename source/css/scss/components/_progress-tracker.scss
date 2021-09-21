@@ -1,6 +1,6 @@
-/*------------------------------------*\
+/* ------------------------------------ *\
     #PROGRESS TRACKER
-\*------------------------------------*/
+\* ------------------------------------ */
 
 /**
  * 1) Ordered list showing progress (i.e. step by step)
@@ -9,16 +9,16 @@
  */
 
 .c-progress-tracker {
-	display: flex; /* 2 */
+    display: flex; /* 2 */
+    flex-wrap: wrap; /* 2 */
     justify-content: center;
-	flex-wrap: wrap; /* 2 */
 }
 
 /* Progress tracker iterm */
 .c-progress-tracker__item {
+    font-size: $font-size-sm-2;
     margin-right: 2rem;
     text-align: center;
-    font-size: $font-size-sm-2;
     width: 5rem;
 
     /* Don't display the horizontal line on the last item number */
@@ -29,11 +29,11 @@
 
 
 .c-progress-tracker__number {
-    padding: .125rem;
-    margin-bottom: .5rem;
-    color: $color-brand-blue;
-    border: 1px solid $color-brand-blue;
     background-color: $color-neutral-white;
+    border: 1px solid $color-brand-blue;
+    color: $color-brand-blue;
+    margin-bottom: .5rem;
+    padding: .125rem;
     position: relative;
 
     @media all and (min-width: $bp-small) {
@@ -46,25 +46,25 @@
     }
 
     .is-current & {
-        color: $color-neutral-white;
         background-color: $color-brand-blue;
+        color: $color-neutral-white;
         font-weight: bold;
     }
 
     .is-disabled & {
-        color: $color-brand-blue-dark;
         border-color: $color-brand-blue;
+        color: $color-brand-blue-dark;
     }
 
     &:before {
+        background-color: $color-neutral-gray-13;
         content: " ";
         display: block;
-        width: 4rem;
         height: 1px;
-        background-color: $color-neutral-gray-13;
         position: absolute;
-        top: 50%;
         right: -4rem;
+        top: 50%;
+        width: 4rem;
         z-index: -1;
     }
 }

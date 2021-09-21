@@ -1,16 +1,16 @@
-/*------------------------------------*\
-	#HERO BLOCK
-\*------------------------------------*/
+/* ------------------------------------ *\
+    #HERO BLOCK
+\* ------------------------------------ */
 
 /**
- * 1) Sit hero flush with header. Normally we wouldn't 
+ * 1) Sit hero flush with header. Normally we wouldn't
  *    do this and handle margin using utility classes,
  *    but we're taking a shortcut for a demo.
  */
 .c-hero {
-	display: block;
-	position: relative;
-	margin: -2rem 0 2rem; /* 1 */
+    display: block;
+    margin: -2rem 0 2rem; /* 1 */
+    position: relative;
 }
 
 /**
@@ -18,37 +18,37 @@
  * 1) This is the primary hero image that runs full-bleed across the layout
  */
 .c-hero__img {
-	display: block;
-	width: 100%;
-	object-fit: cover;
-	max-height: 70vh;
-	overflow: hidden;
+    display: block;
+    max-height: 70vh;
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
 }
 
 .c-hero__body {
-	background: $color-brand-orange;
-	padding: $spacing;
+    background: $color-brand-orange;
+    padding: $spacing;
 
-	@media all and (min-width: $bp-small-2) {
-		padding: 0;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		height: 100%;
-		width: 100%;
-		background: linear-gradient(
-			to bottom,
-			rgba(0, 0, 0, 0) 0,
-			rgba(0, 0, 0, 0) 20%,
-			#000 100%
-		);
-	}
+    @media all and (min-width: $bp-small-2) {
+        align-items: center;
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 0,
+            rgba(0, 0, 0, 0) 20%,
+            #000 100%
+        );
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        left: 0;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+    }
 }
 
 /**
@@ -56,14 +56,14 @@
  * 1) This sits overtop of the hero image when space permits
  */
 .c-hero__headline {
-	text-transform: uppercase;
-	font-size: $font-size-xl;
-	background-color: $color-brand-orange;
-	color: $color-neutral-white;
-	transition: all $anim-fade-quick $anim-ease;
+    background-color: $color-brand-orange;
+    color: $color-neutral-white;
+    font-size: $font-size-xl;
+    text-transform: uppercase;
+    transition: all $anim-fade-quick $anim-ease;
 
-	@media all and (min-width: $bp-small-2) {
-		padding: 0 0.4rem;
-		font-size: $font-size-xxl;
-	}
+    @media all and (min-width: $bp-small-2) {
+        font-size: $font-size-xxl;
+        padding: 0 0.4rem;
+    }
 }

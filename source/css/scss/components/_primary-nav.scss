@@ -1,31 +1,31 @@
-/*------------------------------------*\
+/* ------------------------------------ *\
     #PRIMARY NAVIGATION
-\*------------------------------------*/
+\* ------------------------------------ */
 
 /**
  * Primary navigation existing in the header and maybe the footer
  */
 
- .c-primary-nav {
+.c-primary-nav {
 
-	 @media all and (min-width: 32em) {
-		 margin-left: auto;
-	 }
- }
+    @media all and (min-width: 32em) {
+        margin-left: auto;
+    }
+}
 
 /**
  * Primary navigation list
  */
 .c-primary-nav__list {
-	display: flex;
     align-items: center;
+    display: flex;
 }
 
 /**
  * Primary navigation item
  */
 .c-primary-nav__item {
-	margin-right: 2rem;
+    margin-right: 2rem;
 
     &:last-child {
         margin-right: 0;
@@ -36,12 +36,12 @@
  * Primary navigation link
  */
 .c-primary-nav__link {
-	display: block;
-	cursor: pointer;
-	font-family: $font-family-secondary;
-	font-size: $font-size-med-2;
+    cursor: pointer;
+    display: block;
+    font-family: $font-family-secondary;
+    font-size: $font-size-med-2;
     line-height: 1;
-	text-transform: uppercase;
+    text-transform: uppercase;
     transition: background $anim-fade-quick $anim-ease;
 
     &:hover, &:focus {

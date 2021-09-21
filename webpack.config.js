@@ -1,4 +1,6 @@
 const path = require('path');
+const StylelintPlugin = require('stylelint-webpack-plugin');
+
 module.exports = {
     entry: [
         './source/js/index.js',
@@ -33,5 +35,13 @@ module.exports = {
                 ]
             }
         ]
-    }
+    },
+    plugins: [
+        new StylelintPlugin(
+            {   configFile: '.\stylelintrc.json',
+                context: 'source/css', 
+                files: '**/*.scss'
+            }
+        )
+    ]
 }

@@ -1,6 +1,6 @@
-/*------------------------------------*\
+/* ------------------------------------ *\
     #LAYOUT
-\*------------------------------------*/
+\* ------------------------------------ */
 
 /**
  * Layout Container
@@ -8,17 +8,17 @@
  *    and centers the container
  */
 .l-container {
-	max-width: $l-max-width;
-	padding: 0 $spacing;
-	margin: 0 auto;
+    margin: 0 auto;
+    max-width: $l-max-width;
+    padding: 0 $spacing;
 
-	@media all and (min-width: $bp-large) {
-		padding: 0 $spacing-large;
-	}
+    @media all and (min-width: $bp-large) {
+        padding: 0 $spacing-large;
+    }
 }
 
 .l-container--narrow {
-	max-width: $l-max-width-narrow;
+    max-width: $l-max-width-narrow;
 }
 
 /**
@@ -31,29 +31,30 @@
 }
 
 .l-band {
-	background: $color-neutral-gray-02;
-	padding: 2rem 1rem;
+    background: $color-neutral-gray-02;
+    padding: 2rem 1rem;
 }
 
 /**
  * 2 column layout
  */
 .l-page-layout--two-column {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
-	@media all and (min-width: $bp-large) {
-		flex-direction: row;
-	}
+    @media all and (min-width: $bp-large) {
+        flex-direction: row;
+    }
 }
 
 .l-page-layout__main {
-	.l-page-layout--two-column & {
-		@media all and (min-width: $bp-large) {
-			width: 70%;
-			padding-right: $spacing;
-		}
-	}
+	
+    .l-page-layout--two-column & {
+        @media all and (min-width: $bp-large) {
+            padding-right: $spacing;
+            width: 70%;
+        }
+    }
 }
 
 /**
@@ -61,47 +62,45 @@
  */
 .l-page-layout__secondary {
 
-	.l-page-layout--two-column & {
-		@media all and (min-width: $bp-large) {
-			width: 30%;
-			margin-left: 2rem;
-		}
-	}
+    .l-page-layout--two-column & {
+        @media all and (min-width: $bp-large) {
+            margin-left: 2rem;
+            width: 30%;
+        }
+    }
 
-	.l-page-layout--reversed & {
-		margin-bottom: 2rem;
+    .l-page-layout--reversed & {
+        margin-bottom: 2rem;
 
-		@media all and (min-width: $bp-large) {
-			order: 1;
-			margin-bottom: 0;
-		}
-	}
+        @media all and (min-width: $bp-large) {
+            margin-bottom: 0;
+            order: 1;
+        }
+    }
 }
 
-
-
-/*------------------------------------*\
+/* ------------------------------------ *\
     #GRID
-\*------------------------------------*/
+\* ------------------------------------ */
 
 /**
  * Grid Container
  */
 .l-grid {
-	display: flex;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 
-	@supports (display: grid) {
-		display: grid;
-		grid-gap: $spacing-large;
-		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr) );
-		margin: 0;
-	}
+    @supports (display: grid) {
+        display: grid;
+        grid-gap: $spacing-large;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        margin: 0;
+    }
 }
 
 /**
  * Grid Item
  */
 .l-grid__item {
-	display: flex;
+    display: flex;
 }

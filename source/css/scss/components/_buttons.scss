@@ -1,39 +1,39 @@
-/*------------------------------------*\
+/* ------------------------------------ *\
     #BUTTONS
-\*------------------------------------*/
+\* ------------------------------------ */
 
 /**
  *
  * 1) Button or link that has functionality to it
  */
 .c-btn {
-	display: inline-block;
-	border: $border-thickness solid $color-btn-primary-border;
-	background: $color-brand-blue;
-	color: $color-neutral-white;
-	line-height: 1;
-	padding: 1rem 2rem;
-	border: 0;
-	text-transform: uppercase;
-	text-align: center;
-	transition: all $anim-fade-quick $anim-ease;
+    background: $color-brand-blue;
+    border: 0;
+    border: $border-thickness solid $color-btn-primary-border;
+    color: $color-neutral-white;
+    display: inline-block;
+    line-height: 1;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all $anim-fade-quick $anim-ease;
 
-	&:hover, &:focus {
-		color: $color-neutral-white;
-		background: $color-brand-blue-dark;
-	}
+    &:hover, &:focus {
+        background: $color-brand-blue-dark;
+        color: $color-neutral-white;
+    }
 }
 
 .c-btn--bare {
-	background: none;
-	color: $color-brand-blue;
-	border: 1px solid transparent;
+    background: none;
+    border: 1px solid transparent;
+    color: $color-brand-blue;
 
-	&:hover, &:focus {
-		background: none;
-		color: $color-brand-blue;
-		border-color: $color-brand-blue;
-	}
+    &:hover, &:focus {
+        background: none;
+        border-color: $color-brand-blue;
+        color: $color-brand-blue;
+    }
 }
 
 /*
@@ -43,17 +43,17 @@
  * 2) Only needs to be used for buttons containing both icons and text
  */
 .c-btn__inner {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 /*
  * Button icon
  */
 .c-btn__icon {
-	width: 1rem;
-	height: 1rem;
-	fill: $color-btn-primary;
-	transition: fill $anim-fade-quick $anim-ease;
+    fill: $color-btn-primary;
+    height: 1rem;
+    transition: fill $anim-fade-quick $anim-ease;
+    width: 1rem;
 }

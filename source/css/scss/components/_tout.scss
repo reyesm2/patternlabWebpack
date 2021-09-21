@@ -1,43 +1,43 @@
 
-/*------------------------------------*\
-	#TOUT BLOCK
-\*------------------------------------*/
+/* ------------------------------------ *\
+    #TOUT BLOCK
+\* ------------------------------------ */
 
 /**
  * 1) The tout block contains an image and headline overlayed over the image.
  */
 .c-tout {
     display: block;
-	position: relative;
-    overflow: hidden;
     max-width: 1024px;
+    overflow: hidden;
+    position: relative;
 }
 
 /**
  *  Tout image
  */
 
- .c-tout__img {
-	 display: block;
- }
+.c-tout__img {
+    display: block;
+}
 
 /**
  *  Tout headline
  */
 .c-tout__headline {
-    position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%;
-	text-transform: uppercase;
-	letter-spacing: 1px;
     color: $color-neutral-white;
-    padding: 0.5rem;
     font-size: 1.4rem;
+    left: 0;
+    letter-spacing: 1px;
+    padding: 0.5rem;
+    position: absolute;
+    text-transform: uppercase;
     transition: all $anim-fade-quick $anim-ease;
+    width: 100%;
 
     .c-tout:hover &, .c-tout:focus & {
-        padding-bottom: 2rem;
         background: $color-brand-blue;
+        padding-bottom: 2rem;
     }
 }

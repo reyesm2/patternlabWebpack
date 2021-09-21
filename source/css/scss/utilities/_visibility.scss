@@ -1,6 +1,6 @@
-/*------------------------------------*\
+/* ------------------------------------ *\
     #VISIBILITY CLASSES
-\*------------------------------------*/
+\* ------------------------------------ */
 
 /**
  * Is Hidden
@@ -16,11 +16,11 @@
  * 1) Completely remove from the flow but leave available to screen readers.
  */
 .u-is-vishidden {
-    position: absolute !important;
-    overflow: hidden;
-    width: 1px;
-    height: 1px;
-    padding: 0;
     border: 0;
     clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
 }

@@ -1,6 +1,6 @@
-/*------------------------------------*\
+/* ------------------------------------ *\
     #MIXINS
-\*------------------------------------*/
+\* ------------------------------------ */
 
 /**
  * Body Styles
@@ -15,9 +15,9 @@
 /**
  * XL Type Styles
  */
- @mixin typographyBodyLarge() {
+@mixin typographyBodyLarge() {
     font-size: $font-size-med-2;
-	line-height: $line-height-large;
+    line-height: $line-height-large;
 }
 
 /**
@@ -39,32 +39,32 @@
 @mixin typographyHeadingXl() {
     font-size: $font-size-xl;
     font-weight: normal;
-	line-height: 1.2;
+    line-height: 1.2;
 }
 
 /**
  * Large Heading Styles
  */
- @mixin typographyHeadingLarge() {
+@mixin typographyHeadingLarge() {
     font-size: $font-size-large;
     font-weight: normal;
-	line-height: 1.2;
+    line-height: 1.2;
 }
 
 /**
  * Medium 2 Heading Styles
  */
- @mixin typographyHeadingMed2() {
+@mixin typographyHeadingMed2() {
     font-size: $font-size-med-2;
     font-weight: normal;
-	line-height: 1.2;
+    line-height: 1.2;
 }
 
 /**
  * Medium Heading Styles
  */
- @mixin typographyHeadingMed() {
+@mixin typographyHeadingMed() {
     font-size: $font-size-med;
     font-weight: normal;
-	line-height: 1.2;
+    line-height: 1.2;
 }

@@ -1,27 +1,27 @@
-/*------------------------------------*\
+/* ------------------------------------ *\
     #HEADER
-\*------------------------------------*/
+\* ------------------------------------ */
 
 /**
  * Global block at the top of each page containing the navigation, logo, and other potential contents
  */
 .c-header {
-	position: relative;
-	margin-bottom: 2rem;
-	border-bottom: 1px solid $color-neutral-gray-13;
+    border-bottom: 1px solid $color-neutral-gray-13;
+    margin-bottom: 2rem;
+    position: relative;
 }
 
 /**
  * Header inner
  */
 .c-header__inner {
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 
-	@media all and (min-width: $bp-small-2) {
-		display: flex;
-		align-items: center;
-	}
+    @media all and (min-width: $bp-small-2) {
+        align-items: center;
+        display: flex;
+    }
 }
 
 /**
@@ -29,11 +29,11 @@
  * 1) Button used to toggle the navigation on/off on small screens
  */
 .c-header__nav-btn {
-	margin-left: auto;
+    margin-left: auto;
 
-	@media all and (min-width: $bp-xl) {
-		display: none;
-	}
+    @media all and (min-width: $bp-xl) {
+        display: none;
+    }
 }
 
 /**
@@ -41,51 +41,51 @@
  * 1) Contains the primary navigation and other possible patterns
  */
 .c-header__nav-container {
-	display: none;
+    display: none;
 
-	@media all and (min-width: $bp-xl) {
-		display: block;
-		margin-left: auto;
-	}
+    @media all and (min-width: $bp-xl) {
+        display: block;
+        margin-left: auto;
+    }
 
-	/**
-	 * Header navigation conntainer within vertical header
-	 */
-	.c-header--vertical & {
-		@media all and (min-width: $bp-xl) {
-			margin-left: 0;
-		}
-	}
+    /**
+     * Header navigation conntainer within vertical header
+     */
+    .c-header--vertical & {
+        @media all and (min-width: $bp-xl) {
+            margin-left: 0;
+        }
+    }
 }
 
 /**
  * Active header nav container
  */
 .c-header__nav-container.is-active {
-	display: block;
-	position: absolute;
-	background: $color-neutral-gray-07;
-	top: 100%;
-	left: 0;
-	width: 100%;
-	z-index: 5;
-	padding: 1rem;
+    background: $color-neutral-gray-07;
+    display: block;
+    left: 0;
+    padding: 1rem;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 5;
 
-	@media all and (min-width: $bp-xl) {
-		display: block;
-		position: static;
-		padding: 0;
-		margin-left: auto;
-		width: inherit;
-	}
+    @media all and (min-width: $bp-xl) {
+        display: block;
+        margin-left: auto;
+        padding: 0;
+        position: static;
+        width: inherit;
+    }
 
-	/**
-	 * Active header nav container within vertical header
-	 */
-	.c-header--vertical & {
-		@media all and (min-width: $bp-xl) {
-			margin-left: 0;
-			width: 100%;
-		}
-	}
+    /**
+     * Active header nav container within vertical header
+     */
+    .c-header--vertical & {
+        @media all and (min-width: $bp-xl) {
+            margin-left: 0;
+            width: 100%;
+        }
+    }
 }
