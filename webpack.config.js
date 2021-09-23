@@ -1,5 +1,6 @@
 const path = require('path');
 const StylelintPlugin = require('stylelint-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
     entry: [
@@ -29,7 +30,7 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {outputPath: 'css/', 
-                        name: 'bundle.min.css'}
+                        name: 'bundle.css'}
                     },
                     'sass-loader'
                 ]
@@ -41,6 +42,12 @@ module.exports = {
             {   configFile: '.\stylelintrc.json',
                 context: 'source/css', 
                 files: '**/*.scss'
+            }
+        ),
+        new ESLintPlugin(
+            {   
+                context: 'source/js', 
+                files: '**/*.js'
             }
         )
     ]

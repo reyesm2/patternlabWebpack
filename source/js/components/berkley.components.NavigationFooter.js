@@ -1,4 +1,4 @@
-var berkley = berkley || {};
+let berkley = berkley || {};
     berkley.components = berkley.components || {}; 
 
 berkley.components.NavigationFooter = ((module) => {

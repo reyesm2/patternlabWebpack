@@ -1,4 +1,4 @@
-var berkley = berkley || {};
+let berkley = berkley || {};
     berkley.constants = berkley.constants || {};
 
 
@@ -11,6 +11,7 @@ var berkley = berkley || {};
 berkley.constants = {
     HIDDEN_CLASS: "js-hidden",
     MODULE_CLASS: 'js-module',
+    MOBILE_MAX_SIZE: 767,
 };
 
 export default berkley.constants;

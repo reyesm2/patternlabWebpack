@@ -1,8 +1,8 @@
-import NavigationMenu from  './berkley.components.NavigationMenu';
 import NavigationFooter from './berkley.components.NavigationFooter';
+import NavigationMenu from  './berkley.components.NavigationMenu';
 import SkipMainContent from './berkley.components.SkipMainContent';
 
-var berkley = berkley || {};
+let berkley = berkley || {};
     berkley.components = berkley.components || {}; 
 
 berkley.components = {

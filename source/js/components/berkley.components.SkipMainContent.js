@@ -1,18 +1,18 @@
-var berkley = berkley || {};
+let berkley = berkley || {};
     berkley.components = berkley.components || {}; 
 
 berkley.components.SkipMainContent = (() => {
 
-    var CONSTATS = {
+    let CONSTATS = {
         MAIN_CONTENT: 'mainContent'
     };
 
-    var isLoaded = false;
+    let isLoaded = false;
 
     let SkipMainContentComponent =  (module) => {
 
         let init  = () => {
-            console.log('SkipMainContent - loaded:',module);
+            console.log('SkipMainContent - loaded:',module, isLoaded, CONSTATS.MAIN_CONTENT);
         }
 
         init();
