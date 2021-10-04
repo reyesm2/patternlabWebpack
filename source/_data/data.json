@@ -20,5 +20,111 @@
 	"cta": "Call to Action",
 	"sectionTitle": "Section Title",
 	"hero": true,
-	"promoBlock": true
+	"promoBlock": true,
+	"dropdown-list": {
+		"dropdown-class": "c-dropdown-address",
+		"dropdown-label": "Dropdown label",
+		"dropdown-label-class": "dropdown-label",
+		"dropdown-helper": "Optional helper text.",
+		"dropdown-trigger": "Select an item",
+		"dropdown-trigger-class": "dropdown-trigger",
+		"dropdown-options-class": "dropdown-list",
+		"dropdown-options" : [
+			{	
+				"option-id": "allOption",
+				"option-value": "allOption",
+				"option-text": "all",
+				"option-class-modifier": "dropdown-options"
+			},
+			{	
+				"option-id": "Option1",
+				"option-value": "allOption1",
+				"option-text": "Option 1",
+				"option-class-modifier": "dropdown-options"
+			},
+			{	
+				"option-id": "Option2",
+				"option-value": "allOption2",
+				"option-text": "Option 2",
+				"option-class-modifier": "dropdown-options"
+			},
+			{	
+				"option-id": "Option3",
+				"option-value": "allOption3",
+				"option-text": "Option 3",
+				"option-class-modifier": "dropdown-options"
+			},
+			{	
+				"option-id": "Option4",
+				"option-value": "allOption4",
+				"option-text": "Option 4",
+				"option-class-modifier": "dropdown-options"
+			}
+		]
+	},
+	"select-id": "selectid1",
+	"select-label": "Select Label",
+	"select-trigger": "Choose an option",
+	"select-list": [
+		{	
+			"category-name": "Category 1",
+			"category-list": [
+				{
+					"option-text": "A much longer option that is worth having around to check how text flows",
+					"option-value": "solong"
+				},
+				{
+					"option-text": "Option 1",
+					"option-value": "option1"
+				},
+				{
+					"option-text": "Option 2",
+					"option-value": "option2"
+				}
+			]
+		},
+		{	
+			"category-list": [
+				{
+					"option-text": "Option 3",
+					"option-value": "option3"
+				},
+				{
+					"option-text": "Option 4",
+					"option-value": "option4"
+				}
+			]
+		}
+	],
+	"multi-select-id": "multiSelectId1",
+	"multi-select-label": "Multi Select Label",
+	"multi-select-helper": "Multi Select helper text",
+	"multi-select-trigger": "Choose an option",
+	"multi-select-button": "open menu",
+	"multi-select-span": "Multi select options",
+	"clear-button-multi-select": {
+		"clear-button-amount": "1",
+		"clear-button-text": "Clear all selected items"
+	},
+	"multi-select-options": {	
+		"multi-list-label": "Description of form elements within the fieldset",
+		"multi-list": [
+			{
+				"option-checkbox": true,
+				"option-checkbox-attributes": "checked",
+				"option-text": "A much longer option",
+				"option-value": "solong"
+			},
+			{	
+				"option-checkbox": true,
+				"option-text": "Option 1",
+				"option-value": "option1"
+			},
+			{	
+				"option-checkbox": true,
+				"option-text": "Option 2",
+				"option-value": "option2"
+			}
+		]
+	}	
 }

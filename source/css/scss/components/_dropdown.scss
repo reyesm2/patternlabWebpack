@@ -1,0 +1,37 @@
+/* ------------------------------------ *\
+    #DROPDOWN
+\* ------------------------------------ */
+
+
+/**
+ * 1) Consist a block at button and block with options.
+ */
+
+.visually-hidden {
+    display: none;
+}
+
+.dropdown {
+    font-family: $font-family-secondary;
+
+    &-label {
+        font-size: $font-size-large;
+        text-transform: uppercase;
+    }
+
+    &-trigger {
+        background-color: white !important;
+        font-size: $font-size-med-2;
+    }
+
+    &-list {
+        
+        .bx--dropdown--open  & {
+            border: 1px solid black;
+        }
+    }
+
+    &-options {
+        font-size: $font-size-med-2;
+    }
+}

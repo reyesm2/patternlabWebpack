@@ -1,0 +1,62 @@
+<div class="bx--form-item">
+    <div class="bx--list-box__wrapper js-module" data-module="MultiSelect">
+        {{#if multi-select-label}}
+            <label class="bx--label">{{multi-select-label}}</label>
+        {{/if}}
+        {{#if multi-select-helper}}
+            <div class="bx--form__helper-text">{{multi-select-helper}}</div>
+        {{/if}}
+        <div class="bx--multi-select bx--list-box bx--multi-select--selected">
+            <div role="button" class="bx--list-box__field js-dropdown-button" tabindex="0" aria-label="{{multi-select-button}}"
+                aria-expanded="false" aria-haspopup="true">
+                {{#if clear-button-multi-select}}
+                {{#with clear-button-multi-select}}
+                    <div role="button" 
+                    class="bx--list-box__selection bx--list-box__selection--multi bx--tag--filter
+                        js-dropdown-clear-button"
+                    tabindex="0" title="{{clear-button-text}}">
+                    <span>
+                        {{clear-button-amount}}
+                    </span>
+                    <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" 
+                        xmlns="http://www.w3.org/2000/svg" aria-label="Clear selection" width="16" height="16" 
+                        viewBox="0 0 16 16" role="img"><path d="M12 4.7L11.3 4 8 7.3 4.7 4 4 4.7 7.3 8 4 11.3 4.7 12 8 8.7 11.3 12 12 11.3 8.7 8z"></path>
+                    </svg>
+                    </div>
+                {{/with}}
+                {{/if}}
+                <span class="bx--list-box__label">{{multi-select-span}}</span>
+                <div class="bx--list-box__menu-icon">
+                <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" 
+                    xmlns="http://www.w3.org/2000/svg" aria-label="Close menu" width="16" height="16" 
+                    viewBox="0 0 16 16" role="img"><path d="M8 5L13 10 12.3 10.7 8 6.4 3.7 10.7 3 10z"></path></svg>
+                </div>
+            </div>
+            {{#if multi-select-options}}
+                {{#with multi-select-options}}
+                    <fieldset class="bx--list-box__menu js-dropdown-list" role="listbox">
+                        <legend class="bx--assistive-text">{{multi-list-label}}</legend>
+                        {{#each multi-list}}
+                            <div class="bx--list-box__menu-item js-dropdown-option js-focusable-option" 
+                                role="option" tabindex="-1">
+                                <div class="bx--list-box__menu-item__option">
+                                    <div class="bx--form-item bx--checkbox-wrapper">
+                                    <label title="Option 1" class="bx--checkbox-label">
+                                        {{#option-checkbox}}
+                                            <input type="checkbox" name="{{option-text}}" readonly="" 
+                                                class="bx--checkbox js-dropdown-option-input" id="{{option-value}}"
+                                                value="on" {{option-checkbox-attributes}}>
+                                        {{/option-checkbox}}
+                                        <span class="bx--checkbox-appearance"></span>
+                                        <span class="bx--checkbox-label-text">{{option-text}}</span>
+                                    </label>
+                                    </div>
+                                </div>
+                            </div>
+                        {{/each}}
+                    </fieldset>
+                {{/with}}
+            {{/if}}
+        </div>
+    </div>
+</div>

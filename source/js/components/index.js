@@ -1,3 +1,4 @@
+import MultiSelect from './berkley.components.MultiSelect';
 import NavigationFooter from './berkley.components.NavigationFooter';
 import NavigationMenu from  './berkley.components.NavigationMenu';
 import SkipMainContent from './berkley.components.SkipMainContent';
@@ -8,7 +9,8 @@ let berkley = berkley || {};
 berkley.components = {
     SkipMainContent,
     NavigationMenu,
-    NavigationFooter
+    NavigationFooter,
+    MultiSelect
 }
 
 export default berkley.components;

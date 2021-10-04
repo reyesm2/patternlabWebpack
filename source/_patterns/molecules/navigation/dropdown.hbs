@@ -1,0 +1,40 @@
+{{#dropdown-list}}
+    <div id="modal-nofooter" class="bx--form-item dropdown">
+        <div class="bx--dropdown__wrapper ">
+            <span id="example-ap3t91wclrj-label" class="bx--label {{dropdown-label-class}}">
+                {{dropdown-label}}
+            </span>
+            <div class="bx--form__helper-text">
+                {{dropdown-helper}}
+            </div>
+            <div data-dropdown data-value
+            class="bx--dropdown  bx--dropdown--show-selected">
+            <button class="bx--dropdown-text {{dropdown-trigger-class}}" aria-haspopup="true" aria-expanded="false" aria-controls="example-ap3t91wclrj-menu" aria-labelledby="example-ap3t91wclrj-label example-ap3t91wclrj-value" type="button">
+                <span class="bx--dropdown-text__inner" id="example-ap3t91wclrj-value"> 
+                    {{dropdown-trigger}}
+                </span>
+                <span class="bx--dropdown__arrow-container">
+                <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" 
+                    xmlns="http://www.w3.org/2000/svg" class="bx--dropdown__arrow" width="16" height="16" 
+                    viewBox="0 0 16 16" aria-hidden="true"><path d="M8 11L3 6 3.7 5.3 8 9.6 12.3 5.3 13 6z"></path></svg>
+                </span>
+            </button>
+            <ul class="bx--dropdown-list {{dropdown-options-class}}" id="example-ap3t91wclrj-menu" role="menu" tabindex="0" id="example-ap3t91wclrj-menu" aria-hidden="true" wh-menu-anchor="left" aria-labelledby="example-ap3t91wclrj-label">                
+                {{#dropdown-options}}
+                    <li data-option data-value="{{option-value}}" class="bx--dropdown-item {{option-class-modifier}}" 
+                        title="{{option-text}}">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" 
+                        role="menuitemradio" aria-checked="true" id="{{option-id}}">
+                            {{option-text}}
+                        </a>
+                        <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" 
+                            ria-hidden="true" class="bx--list-box__menu-item__selected-icon" width="16" 
+                            height="16" viewBox="0 0 16 16"><path d="M6 10.6L2.5 7.1 1.8 7.8 5.3 11.3 6 12 13.1 4.9 12.4 4.2z"></path></svg>
+                    </li>
+                {{/dropdown-options}}
+            </ul>
+            </div>
+        </div>
+    </div>
+{{/dropdown-list}}
+

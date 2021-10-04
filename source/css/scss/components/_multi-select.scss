@@ -1,0 +1,17 @@
+/* ------------------------------------ *\
+    #DROPDOWN
+\* ------------------------------------ */
+
+
+/**
+ * 1) Consist a block at button and block with options.
+ */
+
+.bx--list-box__menu {
+    display: none;
+
+    .bx--list-box--expanded & {
+        display: block;
+    }
+}
+ 
