@@ -14,31 +14,6 @@
       "name": "$color-utility-error",
       "value": "#b12a0b",
       "comment": ""
-    },
-    {
-      "name": "$color-utility-error-light",
-      "value": "#fdded8",
-      "comment": ""
-    },
-    {
-      "name": "$color-utility-success",
-      "value": "#03804d",
-      "comment": ""
-    },
-    {
-      "name": "$color-utility-success-light",
-      "value": "#d4f3e6",
-      "comment": ""
-    },
-    {
-      "name": "$color-utility-warning",
-      "value": "#a59b15",
-      "comment": ""
-    },
-    {
-      "name": "$color-utility-warning-light",
-      "value": "#fffecf",
-      "comment": ""
     }
   ],
   "meta": {

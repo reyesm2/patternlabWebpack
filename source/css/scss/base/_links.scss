@@ -6,7 +6,6 @@
  * Link base styles
  */
 a {
-    color: $color-links;
     outline: 0;
     text-decoration: none;
     transition: color $anim-fade-quick $anim-ease;
@@ -15,7 +14,4 @@ a {
         color: $color-links-hover;
     }
 
-    &:active {
-        color: $color-links-active;
-    }
 }

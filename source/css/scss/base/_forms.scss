@@ -7,21 +7,6 @@
  */
 
 /**
- * Input placeholder text base styles
- */
-::-webkit-input-placeholder {
-    color: $color-form-placeholder;
-}
-
-::-moz-placeholder {
-    color: $color-form-placeholder;
-}
-
-:-ms-input-placeholder {
-    color: $color-form-placeholder;
-}
-
-/**
  * Fieldset base styles
  */
 fieldset {
@@ -37,14 +22,6 @@ legend {
     margin-bottom: 0.25rem;
 }
 
-/**
- * Label base styles
- */
-label {
-    color: $color-form-label;
-    display: block;
-    padding-bottom: 0.25rem;
-}
 
 /**
  * Add font size 100% of form element and margin 0 to these elements
@@ -66,19 +43,12 @@ textarea {
  * Input  and text area base styles
  */
 input, textarea {
-    background: $color-form-bg;
-    border: $border-thickness solid $color-form-border;
     padding: 0.5rem;
     width: 100%;
-
-    &:focus {
-        border-color: $color-form-border-focus;
-    }
 
     &:disabled {
         background: $color-neutral-gray-07;
         border-color: $color-neutral-gray-07;
-        color: $color-neutral-gray-50;
     }
 }
 
@@ -94,7 +64,6 @@ input[type=text], input[type=search], input[type="search"]::-webkit-search-cance
  */
 input[type="checkbox"],
 input[type="radio"] {
-    border-color: $color-form-border;
     margin-right: 0.3rem;
     width: auto;
 }
@@ -112,17 +81,11 @@ input[type="search"] {
  * 1) Remove default styling
  */
 select {
-    background: $color-form-bg;
-    border: $border-thickness solid $color-form-border;
     border-radius: 0;
-    color: $color-form;
     display: block;
     font-size: $font-size-med;
     height: 2rem;
     padding: 0.5rem;
     width: 100%;
 
-    &:focus {
-        border-color: $color-form-border-focus;
-    }
 }

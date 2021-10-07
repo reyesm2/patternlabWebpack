@@ -1,7 +1,7 @@
 {
   "cacheBust": true,
   "cleanPublic": true,
-  "defaultPattern": "all",
+  "defaultPattern": "pages-homepage",
   "defaultShowPatternInfo": false,
   "ishControlsHide": {
     "s": false,
