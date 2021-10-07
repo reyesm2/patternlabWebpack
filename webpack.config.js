@@ -3,12 +3,15 @@ const StylelintPlugin = require('stylelint-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
-    entry: [
-        './source/js/index.js',
-        './source/css/style.scss'
-    ],
+    entry: {
+        bundle: [
+            './source/js/vendor/carbon-components.min.js',
+            './source/js/index.js',
+            './source/css/style.scss'
+        ]
+    },
     output: {
-        filename: 'js/bundle.js',
+        filename: 'js/[name].js',
         path: path.resolve(__dirname, 'public/')
     },
     module: {
@@ -29,8 +32,10 @@ module.exports = {
                 use: [
                     {
                         loader: 'file-loader',
-                        options: {outputPath: 'css/', 
-                        name: 'bundle.css'}
+                        options: {
+                            outputPath: 'css/',
+                            name: 'bundle.css'
+                        }
                     },
                     'sass-loader'
                 ]
@@ -41,14 +46,16 @@ module.exports = {
         new StylelintPlugin(
             {   configFile: '.\stylelintrc.json',
                 context: 'source/css', 
+                exclude: 'scss/vendor/*.scss',
                 files: '**/*.scss'
             }
         ),
         new ESLintPlugin(
             {   
-                context: 'source/js', 
+                context: 'source/js',
+                exclude: 'vendor/*.js',
                 files: '**/*.js'
             }
-        )
+        ),  
     ]
 }
